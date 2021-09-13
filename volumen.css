@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.grid-big-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+    width: 870px;
+    display: grid;
+    grid-template-columns: 350px 500px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+  }
+
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-inicio {
+  width: 100px;
+  font-size: 30px;
+  border: none;
+  border-radius: 25px;
+  padding: 5px;
+  background-color: tomato;
+  margin-top: 30px;
+  cursor: pointer;
+  }
+
+.btn-inicio:hover {
+  color: white;
+}
+
+
+
+
+   .cube
+    {
+        background: #dc2e2e;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        margin-top: 20px;
+    }
+
+   .cube::before
+    {
+        content: '';
+        display: inline-block;
+        background: #f15757;
+        width: 100px;
+        height: 20px;
+        transform: skewX(-40deg);
+        position: absolute;
+        top: -20px;
+        left: 8px;
+    }
+
+   .cube::after
+    {
+        content: '';
+        display: inline-block;
+        background: #9e1515;
+        width: 16px;
+        height: 100px;
+        transform: skewY(-50deg);
+        position: absolute;
+        top: -10px;
+        left: 100%;
+    }
+
+  .pyramid
+    {
+        width: 100px;
+        height: 200px;
+    }
+
+  .pyramid::before, .pyramid::after
+    {
+        content: '';
+        width: 0;
+        height: 0;
+        border: 50px solid;
+        position: absolute;
+    }
+
+  .pyramid::before
+    {
+        border-color: transparent transparent #7700ff transparent;
+        transform: scaleY(1) skewY(-40deg) rotate(45deg);
+    }
+
+  .pyramid::after
+    {
+        border-color: transparent transparent #5500b6 transparent;
+        transform: scaleY(1) skewY(40deg) rotate(-45deg);
+    }
+
+    .container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .rectangle {
+        background: #dc2e2e;
+        width: 200px;
+        height: 50px;
+        position: relative;
+        margin: 50px;
+        transform: rotate(32deg);
+      }
+      
+      .rectangle::before {
+        content: '';
+        display: inline-block;
+        background: #f15757;
+        width: 200px;
+        height: 2px;
+        transform: skewX( -80deg);
+        position: absolute;
+        top: -2px;
+        left: 6px;
+      }
+      
+      .rectangle::after {
+        content: '';
+        display: inline-block;
+        background: #9e1515;
+        width: 12px;
+        height: 50px;
+        transform: skewY(-10deg);
+        position: absolute;
+        top: -1px;
+        left: 100%;
+      }
+
+      .circle {
+        display: block;
+        background: black;
+        border-radius: 100%;
+        height: 150px;
+        width: 150px;
+        margin: 0;
+        background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+      }
+
+      .cone {
+        margin-top: 20px;
+        height: 0px;
+        width: 0px;
+        border-right: 45px solid transparent;
+        border-left: 45px solid transparent;
+        border-top: 140px solid tan;
+        z-index: 1;
+      }
+
+      .cylinder {
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        width: 100px;
+        height: 150px;
+        border-radius: 50px/25px;
+        background-color: rgba(160, 160, 160, 0.5);
+    }
+    
+    .cylinder:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100px;
+        height: 50px;
+        border-radius: 50px/25px;
+        background-color: rgba(160, 160, 160, 0.2);
+        content: '';
+    }
+    
+    .cylinder:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100px;
+        height: 50px;
+        border-radius: 50px/25px;
+        background-color: rgba(160, 160, 160, 0.4);
+        content: '';
+    }
