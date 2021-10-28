@@ -14,18 +14,25 @@ body {
 }
 
 .form-container {
-    width: 100%;
+    width: 900px;
     height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.big-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .form-box {
     width: 250px;
     height: 250px;
     background-color: tomato;
-    margin: 20px;
+    margin: 10px;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -53,5 +60,8 @@ footer {
     align-items: center;
     color: white;
     background-color: tomato;
-    height: 61px;
+    height: 120px;
 }
+
+
+
